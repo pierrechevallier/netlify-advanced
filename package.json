@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.2.1",
+    "gatsby": "^2.15.33",
     "gatsby-image": "^2.2.23",
     "gatsby-plugin-catch-links": "^2.1.12",
     "gatsby-plugin-feed": "^2.3.15",
@@ -40,7 +41,22 @@
     "react-helmet": "^5.2.1",
     "react-share": "^3.0.1",
     "react-twitter-widgets": "^1.7.1",
-    "url-join": "^4.0.1"
+    "url-join": "^4.0.1",
+    "cli-glob": "^0.1.0",
+    "eslint": "^6.5.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "gh-pages": "^2.1.1",
+    "prettier": "^1.18.2",
+    "remark-cli": "^7.0.0",
+    "remark-preset-lint-recommended": "^3.0.3",
+    "stylefmt": "^6.0.3",
+    "stylelint": "^11.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "write-good": "^1.0.2"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
