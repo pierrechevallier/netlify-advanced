@@ -1,0 +1,21 @@
+.o-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.o-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.o-fg {
+  flex-grow: 1;
+}
+.o-fc-fg {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.o-fr-fg {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}

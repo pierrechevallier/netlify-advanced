@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
+import classNames from "clsx";
 
+/**
+ * #PostListing
+ * _React component for the list of posts on the homepage of the blog section_
+ */
 class PostListing extends React.Component {
   getPostList() {
     const postList = [];
@@ -22,13 +27,13 @@ class PostListing extends React.Component {
     const postList = this.getPostList();
     return (
       <div>
-        {/* Your post list here. */
-        postList.map(post => (
-          <Link to={post.path} key={post.title}>
-            <h1>{post.title}</h1>
-          </Link>
-        ))
-}
+        {
+          postList.map(post => (
+            <Link to={post.path} key={post.title} className={classNames("u-no-txt-deco", "u-no-text-transform")}>
+              <h2>{post.title}</h2>
+            </Link>
+          ))
+        }
       </div>
     );
   }
