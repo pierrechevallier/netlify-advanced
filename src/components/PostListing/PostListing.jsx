@@ -26,7 +26,7 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <div>
+      <div className={classNames("o-fc-aic")}>
         {
           postList.map(post => (
             <Link to={post.path} key={post.title} className={classNames("u-no-txt-deco", "u-no-text-transform")}>

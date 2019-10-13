@@ -21,6 +21,12 @@ MARGINS
 .u-m-l-m {
   margin-left: 1rem;
 }
+.u-m-l-l {
+  margin-left: 2rem;
+}
+.u-m-l-xl {
+  margin-left: 3rem;
+}
 .u-m-r-m {
   margin-right: 1rem;
 }

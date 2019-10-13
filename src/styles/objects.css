@@ -19,3 +19,13 @@
   flex-direction: row;
   flex-grow: 1;
 }
+.o-fr-aic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.o-fc-aic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
