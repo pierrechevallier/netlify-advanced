@@ -1,7 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
-import "./index.css";
 import Navbar from "./NavBar";
 import classNames from "clsx";
 
