@@ -2,7 +2,7 @@ const config = {
   siteTitle: "Chevallier Dev", // Site title.
   siteTitleShort: "chevallier.dev", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Pierre Chevallier dev website", // Alternative site title for SEO.
-  siteLogo: "/logos/favicon.ico", // Logo used for SEO and manifest.
+  siteLogo: "/logos/logo.png", // Logo used for SEO and manifest.
   siteUrl: "https://chevallier.dev", // Domain of your website without pathPrefix.
   pathPrefix: "/netlify-advanced", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A personal website for blogging and keeping a portfolio.", // Website description used for RSS feeds/meta description tag.
@@ -19,7 +19,7 @@ const config = {
   userLocation: "Prague, Czech Republic", // User location to display in the author segment.
   userAvatar: "https://avatars3.githubusercontent.com/u/32485496?s=460&v=4", // User avatar to display in the author segment.
   userDescription:
-    "I love my wife and what I do in life, from enjoying nature, practicing archery or write about technology stuff. I have a dog too, his name is Babar and he is an awesome friend.", // User description to display in the author segment.
+    "I love my wife and what I do in life, from enjoying nature, practicing archery or writing about technology and programming. I have a dog too, his name is Babar and he is an awesome friend.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
@@ -39,8 +39,8 @@ const config = {
     }
   ],
   copyright: "Copyright © 2019. Pierre Chevallier", // Copyright string for the footer of the website and RSS feed.
-  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#e0e0e0" // Used for setting manifest background color.
+  themeColor: "#F07369", // Used for setting manifest and progress theme colors.
+  backgroundColor: "#F2F4EE" // Used for setting manifest background color.
 };
 
 // Validate
