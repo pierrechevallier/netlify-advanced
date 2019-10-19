@@ -2,7 +2,7 @@ const config = {
   siteTitle: "Chevallier Dev", // Site title.
   siteTitleShort: "chevallier.dev", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Pierre Chevallier dev website", // Alternative site title for SEO.
-  siteLogo: "/logos/logo.png", // Logo used for SEO and manifest.
+  siteLogo: "/logos/logo-48.png", // Logo used for SEO and manifest.
   siteUrl: "https://chevallier.dev", // Domain of your website without pathPrefix.
   pathPrefix: "/netlify-advanced", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A personal website for blogging and keeping a portfolio.", // Website description used for RSS feeds/meta description tag.
