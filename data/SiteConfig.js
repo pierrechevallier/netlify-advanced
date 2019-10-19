@@ -1,5 +1,5 @@
 const config = {
-  siteTitle: "Chevallier Dev", // Site title.
+  siteTitle: "Chevallier", // Site title.
   siteTitleShort: "chevallier.dev", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Pierre Chevallier dev website", // Alternative site title for SEO.
   siteLogo: "/logos/logo-48.png", // Logo used for SEO and manifest.

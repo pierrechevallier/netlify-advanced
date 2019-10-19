@@ -8,13 +8,13 @@ export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <div>
+      <div className="c-center-panel_height">
         <Navbar title={config.siteTitle}/>
         <Helmet>
           <meta name="description" content={config.siteDescription} />
           <html lang="en" />
         </Helmet>
-        <div className={classNames("u-p-l")}>
+        <div className={classNames("c-content_site", "o-fc-aic", "t-bg-grey")}>
           {children}
         </div>
       </div>

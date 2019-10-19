@@ -1,3 +1,17 @@
-.u-bg-white {
+.t-bg-white {
   background-color: white;
+}
+.t-bg-grey {
+  background-color: #eeeeee;
+}
+.t-title-console {
+  font-family: Lucida console;
+  font-style: italic;
+  font-variant: all-petite-caps;
+}
+.t-text-red {
+  color: #F07369;
+}
+.t-hovered-title:hover {
+  color: #726DB0;
 }

@@ -9,6 +9,7 @@ import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
+import classNames from "clsx";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -29,7 +30,7 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <div>
+          <div className={classNames("o-fc-aic", "c-list_articles_site", "t-bg-white", "u-simple-shadow")}>
             <h2>{post.title}</h2>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             <div className="c-post-meta">
