@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import classNames from "clsx";
+import NavigateNext from "@material-ui/icons/NavigateNext";
 
 /**
  * #PostListing
@@ -26,12 +27,12 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <div className={classNames("o-fc-aic", "c-list_articles_site", "t-bg-white", "u-simple-shadow")}>
+      <div className={classNames("o-fc-aic", "c-list_articles_site", "t-bg-white", "u-simple-shadow", "u-p-l")}>
         {
           postList.map(post => (
-            <div>
+            <div className={classNames("c-list_articles_article-item", "o-flex-column", "u-p-m", "u-m-t-m", "u-m-b-m")}>
               <Link to={post.path} key={post.title} className={classNames("u-no-txt-deco", "u-no-text-transform")}>
-                <h2 className={"t-text-red"}>{post.title}</h2>
+                <h2 className={"t-text-red"}><NavigateNext/>{post.title}</h2>
               </Link>
               <span>{post.excerpt}</span>
             </div>

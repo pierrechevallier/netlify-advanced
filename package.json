@@ -8,6 +8,8 @@
     "url": "git://github.com/pierrechevallier/netlify-advanced.git"
   },
   "dependencies": {
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
     "clsx": "^1.0.4",
     "core-js": "^3.2.1",
     "gatsby": "^2.15.33",

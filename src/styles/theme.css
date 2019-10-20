@@ -15,3 +15,6 @@
 .t-hovered-title:hover {
   color: #726DB0;
 }
+.t-border-red {
+  border: 1px #F07369 solid;
+}
