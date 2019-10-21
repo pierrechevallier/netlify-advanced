@@ -1,20 +1,30 @@
+//@ts-check
 import React, { Component } from "react";
 import _ from "lodash";
 import { Link } from "gatsby";
+import Button from '@material-ui/core/Button';
+import classNames from "clsx";
 
+/**
+ * PostTags
+ * _React component to display the list of tags of the post_
+ */
 class PostTags extends Component {
   render() {
     const { tags } = this.props;
     return (
-      <div className="post-tag-container">
+      <div className="o-fr-jc">
         {tags &&
           tags.map(tag => (
             <Link
+              className={classNames("u-m-s", "t-bg-purple")}
               key={tag}
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <button type="button">{tag}</button>
+              <Button variant="contained" size="small">
+                {tag}
+              </Button>
             </Link>
           ))}
       </div>

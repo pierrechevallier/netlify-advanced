@@ -12,6 +12,12 @@
 MARGINS
 
 */
+.u-m-s {
+  margin: 0.5rem;
+}
+.u-m-m {
+  margin: 1rem;
+}
 .u-m-b-m {
   margin-bottom: 1rem;
 }

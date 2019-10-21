@@ -4,6 +4,9 @@
 .t-bg-grey {
   background-color: #eeeeee;
 }
+.t-color-purple {
+  color: #726DB0;
+}
 .t-title-console {
   font-family: Lucida console;
   font-style: italic;

@@ -15,7 +15,6 @@
   height: 100vh;
 }
 .c-list_articles_site {
-  width: 70vw;
   height: 100%;
 }
 .c-list_articles_article-item {
@@ -24,6 +23,34 @@
 .c-content_site {
   height: 100%;
 }
-.c-title-site {
-  height: 2rem;
+.c-about {
+  height: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .c-title-site {
+    height: 2rem;
+  }
+  .c-title-site-mobile {
+    display: none;
+  }
+  .c-list_articles_site {
+    width: 70vw;
+  }
+  .c-about {
+    width: 70vw;
+  }
+}
+@media (max-width: 600px) {
+  .c-title-site-mobile {
+    height: 4rem;
+  }
+  .c-title-site {
+    display: none;
+  }
+  .c-list_articles_site {
+    width: 80vw;
+  }
+  .c-about {
+    width: 80vw;
+  }
 }
