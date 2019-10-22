@@ -1,11 +1,29 @@
 .u-no-text-transform {
-  text-transform: none;
+  text-transform: none !important;
 }
 .u-no-txt-deco {
   text-decoration: none;
 }
 .u-simple-shadow {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.u-border-b-double {
+  border-bottom: black 0.2rem double;
+}
+.u-border-heavy-black {
+  border: black 0.4rem solid;
+}
+.u-border-l-light-black {
+  border-left: black 2px solid;
+}
+.u-border-l-normal-black {
+  border-left: black 3px solid;
+}
+.u-border-r-normal-black {
+  border-right: black 3px solid;
+}
+.u-border-b-heavy-black {
+  border-bottom: black 4px solid;
 }
 /*
 

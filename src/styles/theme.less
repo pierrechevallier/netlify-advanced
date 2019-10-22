@@ -21,9 +21,17 @@
 .t-text-red {
     color: @red;
 }
+.t-font-inherit {
+    // Style to override the Material UI theme
+    font-family: inherit !important;
+}
 .t-hovered-title:hover{
     color: @purple;
 }
 .t-border-red {
     border: 1px @red solid;
+}
+.t-dotted-bg {
+    background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 2px, transparent 1%) center, #ccc;
+    background-size: 4px 4px;
 }

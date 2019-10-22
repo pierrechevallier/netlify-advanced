@@ -1,4 +1,3 @@
-//@ts-check
 import React, { Component } from "react";
 import _ from "lodash";
 import { Link } from "gatsby";
@@ -22,7 +21,7 @@ class PostTags extends Component {
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <Button variant="contained" size="small">
+              <Button variant="contained" size="small" classes={{root : classNames("t-font-inherit", "u-no-text-transform")}}>
                 {tag}
               </Button>
             </Link>

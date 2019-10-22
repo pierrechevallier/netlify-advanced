@@ -15,9 +15,16 @@
 .t-text-red {
   color: #F07369;
 }
+.t-font-inherit {
+  font-family: inherit !important;
+}
 .t-hovered-title:hover {
   color: #726DB0;
 }
 .t-border-red {
   border: 1px #F07369 solid;
+}
+.t-dotted-bg {
+  background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 2px, transparent 1%) center, #ccc;
+  background-size: 4px 4px;
 }

@@ -1,4 +1,3 @@
-//@ts-check
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
@@ -31,7 +30,7 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <div className={classNames("o-fc-aic", "c-list_articles_site", "t-bg-white", "u-simple-shadow")}>
+          <div className={classNames("o-fc-aic", "c-list_articles_site", "t-bg-white", "u-border-r-normal-black", "u-border-l-light-black", "u-border-b-heavy-black")}>
             <h2>{post.title}</h2>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             <div className="c-post-meta">
