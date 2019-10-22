@@ -5,6 +5,7 @@ body {
   margin: 0 !important;
   color: black;
   height: 100vh;
+  cursor: url('/images/cursor.png'), auto;
 }
 @media only screen and (min-width: 600px) {
   html,
@@ -26,5 +27,22 @@ h1 {
   height: 100vh;
 }
 a:visited {
-  color: inherit;
+  color: black;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+  border: black 1px solid;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 2px, transparent 1%) center, #ccc;
+  background-size: 5px 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFF;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFF;
 }

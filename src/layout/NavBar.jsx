@@ -10,12 +10,21 @@ import { Link } from "gatsby";
  */
 const Navbar = ({title}) => (
     <div className={classNames("c-navbar", "u-border-b-double", "t-bg-white", "o-fr-jc", "o-fr-aic")}>
-        <Link to={"/"} className={classNames("u-no-txt-deco", "u-no-text-transform")}>
-            <img className={"c-title-site"} src={"/logos/title.svg"} alt={title}/>
+        <Link to={"/"} className={classNames("u-no-txt-deco", "u-no-text-transform", "u-m-r-l")}>
+            <img className={"c-title-site"} src={"/logos/title.png"} alt={title}/>
             <img className={"c-title-site-mobile"} src={"/logos/logo.png"} alt={title}/>
         </Link>
-        <Link to={"/about"} className={classNames("u-no-txt-deco", "u-no-text-transform", "u-m-l-xl")}>
+        <Link
+            to={"/about"}
+            className={classNames("u-no-txt-deco", "u-no-text-transform", "t-hover-grey", "o-fr-jc", "c-navbar-item")}
+        >
             <h2>{"About"}</h2>
+        </Link>
+        <Link
+            to={"/contact"}
+            className={classNames("u-no-txt-deco", "u-no-text-transform", "t-hover-grey", "o-fr-jc", "c-navbar-item")}
+        >
+            <h2>{"Contact"}</h2>
         </Link>
     </div>
 )

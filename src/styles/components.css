@@ -3,6 +3,9 @@
   top: 0;
   display: flex;
 }
+.c-navbar-item {
+  min-width: 10vw;
+}
 .c-post-meta {
   display: flex;
   flex-direction: column;
@@ -28,6 +31,7 @@
 }
 @media only screen and (min-width: 600px) {
   .c-title-site {
+    display: block;
     height: 2rem;
   }
   .c-title-site-mobile {
@@ -42,6 +46,7 @@
 }
 @media (max-width: 600px) {
   .c-title-site-mobile {
+    display: block;
     height: 4rem;
   }
   .c-title-site {
