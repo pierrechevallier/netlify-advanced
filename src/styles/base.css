@@ -4,7 +4,7 @@ body {
   padding: 0 !important;
   margin: 0 !important;
   color: black;
-  height: 100vh;
+  min-height: 100%;
   cursor: url('/images/cursor.png'), auto;
 }
 @media only screen and (min-width: 600px) {
@@ -24,7 +24,7 @@ h1 {
 }
 #___gatsby,
 #gatsby-focus-wrapper {
-  height: 100vh;
+  min-height: 100vh;
 }
 a:visited {
   color: black;
