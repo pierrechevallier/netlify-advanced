@@ -5,12 +5,12 @@ body {
   margin: 0 !important;
   color: black;
   min-height: 100%;
-  cursor: url('/images/cursor.png'), auto;
 }
 @media only screen and (min-width: 600px) {
   html,
   body {
     font-size: 16px;
+    cursor: url('/images/cursor.png'), auto;
   }
 }
 @media (max-width: 600px) {

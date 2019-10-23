@@ -3,9 +3,6 @@
   top: 0;
   display: flex;
 }
-.c-navbar-item {
-  min-width: 10vw;
-}
 .c-post-meta {
   display: flex;
   flex-direction: column;
@@ -24,6 +21,7 @@
   width: 100%;
 }
 .c-content_site {
+  min-height: 100vh;
   height: 100%;
 }
 .c-about {
@@ -40,8 +38,16 @@
   .c-list_articles_site {
     width: 70vw;
   }
+  .c-content_article {
+    max-width: 67vw;
+  }
   .c-about {
     width: 70vw;
+  }
+  .c-navbar-item {
+    min-width: 10vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 @media (max-width: 600px) {
@@ -55,7 +61,16 @@
   .c-list_articles_site {
     width: 80vw;
   }
+  .c-article_width {
+    width: 95vw;
+  }
+  .c-content_article {
+    max-width: 90vw;
+  }
   .c-about {
     width: 80vw;
+  }
+  .c-navbar-item {
+    min-width: 30%;
   }
 }
