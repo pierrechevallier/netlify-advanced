@@ -16,7 +16,7 @@ const Form = () => {
         setValues({ ...values, [name]: event.target.value });
     };
 
-    return <form id="contact-form" className={classNames("o-fc-aic", "u-p-l", "c-contact-form_width")} onSubmit={() => {}} method="POST">
+    return <form name="contact" id="contact-form" className={classNames("o-fc-aic", "u-p-l", "c-contact-form_width")} data-netlify="true" method="POST">
         <div className={classNames("o-fc-js", "u-width-hundred")}>
             <TextField
                 id="outlined-name"
