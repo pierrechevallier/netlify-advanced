@@ -6,7 +6,6 @@ import TextField from '@material-ui/core/TextField';
 /**
  * A contact form
  */
-
 const Form = () => {
     const [values, setValues] = React.useState({
         name: '',
@@ -15,7 +14,6 @@ const Form = () => {
     const handleChange = name => event => {
         setValues({ ...values, [name]: event.target.value });
     };
-
     return <form id="contact-form" className={classNames("o-fc-aic", "u-p-l", "c-contact-form_width")} onSubmit={() => {}} method="POST">
         <div className={classNames("o-fc-js", "u-width-hundred")}>
             <TextField
@@ -48,7 +46,7 @@ const Form = () => {
                 rows="5"
             />
         </div>
-        <Button variant="contained" color="primary">Submit</Button>
+        <Button variant="contained" color="primary" type="submit">Submit</Button>
     </form>
 };
 

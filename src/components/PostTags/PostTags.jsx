@@ -21,7 +21,17 @@ class PostTags extends Component {
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <Button variant="contained" size="small" classes={{root : classNames("t-font-inherit", "u-no-text-transform")}}>
+              <Button
+                variant="contained"
+                size="small"
+                classes={
+                  {
+                    root : classNames("t-font-inherit", "u-no-text-transform"),
+                    contained: classNames("u-no-shadow")
+                  }
+                }
+                className={"u-border-double"}
+              >
                 {tag}
               </Button>
             </Link>
