@@ -11,7 +11,7 @@
   box-shadow: none !important;
 }
 .u-border-double {
-  border-bottom: 0.2rem double;
+  border: darkgrey 0.2rem double !important;
 }
 .u-border-b-double {
   border-bottom: black 0.2rem double;

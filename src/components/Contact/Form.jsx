@@ -46,7 +46,19 @@ const Form = () => {
                 rows="5"
             />
         </div>
-        <Button variant="contained" color="primary" type="submit">Submit</Button>
+        <Button
+            variant="contained"
+            type="submit"
+            classes={
+                {
+                    root : classNames("t-font-inherit", "u-no-text-transform"),
+                    contained: classNames("u-no-shadow")
+                }
+            }
+            className={"u-border-double"}
+        >
+            Submit
+        </Button>
     </form>
 };
 
