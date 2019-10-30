@@ -41,6 +41,7 @@ export default class PostTemplate extends React.Component {
         >
           <div className={classNames("o-fc-aic","u-p-l")}>
             <h2>{post.title}</h2>
+			<h3>Author: {post.author}</h3>
             <div
               className={classNames(
                 "o-flex-column",
@@ -69,6 +70,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         cover
+        author
         date
         category
         tags

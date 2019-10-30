@@ -3,6 +3,7 @@ title: Much test
 cover: /images/uploads/wp1964993.jpg
 date: 2019-10-22T17:29:53.998Z
 category: "tech"
+author: "Pierre"
 tags:
     - programming
     - stuff
