@@ -14,7 +14,7 @@ const Form = () => {
     const handleChange = name => event => {
         setValues({ ...values, [name]: event.target.value });
     };
-    return <form id="contact" className={classNames("o-fc-aic", "u-p-l", "c-contact-form_width")} onSubmit={() => {}} method="POST" data-netlify="true">
+    return <form id="contact" className={classNames("o-fc-aic", "u-p-l", "c-contact-form_width")} method="POST" data-netlify="true">
         <div className={classNames("o-fc-js", "u-width-hundred")}>
             <TextField
                 id="outlined-name"
@@ -24,6 +24,7 @@ const Form = () => {
                 margin="normal"
                 variant="outlined"
                 color={"grey"}
+                name="name"
             />
         </div>
         <div className={classNames("o-fc-js", "u-width-hundred")}>
@@ -35,6 +36,7 @@ const Form = () => {
                 autoComplete="email"
                 margin="normal"
                 variant="outlined"
+                name="email"
             />
         </div>
         <div className={classNames("o-fc-js", "u-m-b-m", "u-width-hundred")}>
@@ -45,6 +47,7 @@ const Form = () => {
                 variant="outlined"
                 multiline
                 rows="5"
+                name="message"
             />
         </div>
         <Button
