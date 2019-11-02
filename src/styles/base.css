@@ -28,6 +28,8 @@ h1 {
 }
 a {
   color: inherit;
+  text-decoration: none white;
+  transition: text-decoration 2s;
 }
 a:visited {
   color: black;
@@ -48,4 +50,23 @@ a:visited {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #FFF;
+}
+/*Tables*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+td {
+  border-bottom: 1px solid #cdcdcd;
+  vertical-align: middle;
+  line-height: 1.35em;
+  padding: 0.25em 0.5em;
+  height: 100%;
 }

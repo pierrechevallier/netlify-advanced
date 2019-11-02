@@ -15,6 +15,12 @@
 .t-text-red {
   color: #F07369;
 }
+.t-text-uppercase {
+  text-transform: uppercase;
+}
+.t-text-bold {
+  font-weight: bold;
+}
 .t-font-inherit {
   font-family: inherit !important;
 }

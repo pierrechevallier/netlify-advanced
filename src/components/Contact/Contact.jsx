@@ -7,7 +7,7 @@ class Contact extends Component {
     return (
       <div className={classNames("c-about", "o-fc-aic")}>
         <h1>
-          Contact us
+          Contact me
         </h1>
         <FormComponent/>
       </div>
