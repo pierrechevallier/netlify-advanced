@@ -13,11 +13,12 @@ class About extends Component {
     ]
     return (
       <div className={classNames("c-about", "o-fc-aic", "u-m-b-m")}>
-        <h1>
-          Hello, I'm Pierre Chevallier, I'm a data analyst and web developper.
-        </h1>
+        <h3 className="t-text-centered">
+          Hello! I'm Pierre Chevallier
+        </h3>
+		<span className={classNames("t-text-centered", "u-m-b-m")}>I'm a data analyst and web developper.</span>
 		<img src={"/images/picture-pierre.jpg"} alt={"Picture of Pierre Chevallier"} className={"c-round-image"}/>
-        <h2>I have experience with the following technologies</h2>
+        <h2 className="t-text-centered">I have experience with the following technologies</h2>
         <table className={"c-table-info"}>
 			<tr className={"c-table-head"}>
 				<th>Technology</th>

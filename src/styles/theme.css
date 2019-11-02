@@ -21,6 +21,9 @@
 .t-text-bold {
   font-weight: bold;
 }
+.t-text-centered {
+  text-align: center;
+}
 .t-font-inherit {
   font-family: inherit !important;
 }
