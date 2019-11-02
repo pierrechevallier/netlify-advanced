@@ -15,7 +15,7 @@ const Form = () => {
         setValues({ ...values, [name]: event.target.value });
     };
     return <form
-        id="contact"
+        name="contact"
         className={classNames("o-fc-aic", "u-p-l", "c-contact-form_width")} 
         method="POST"
         data-netlify="true"

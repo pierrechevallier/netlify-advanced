@@ -54,6 +54,7 @@ export const pageQuery = graphql`
             rating
             tags
             title
+            author
           }
           excerpt
           timeToRead

@@ -16,6 +16,9 @@
 .u-border-b-double {
   border-bottom: black 0.2rem double;
 }
+.u-border-light-grey {
+  border-bottom: lightgrey 1px solid;
+}
 .u-border-heavy-black {
   border: black 0.4rem solid;
 }
