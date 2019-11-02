@@ -60,8 +60,8 @@ th {
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 td {
   border-bottom: 1px solid #cdcdcd;

@@ -3,8 +3,10 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
+import ReadingList from "../components/ReadingList/ReadingList";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import classNames from "clsx";
 
 class Index extends React.Component {
   render() {
@@ -13,7 +15,21 @@ class Index extends React.Component {
       <Layout>
         <Helmet title={config.siteTitle} />
         <SEO />
-        <PostListing postEdges={postEdges} />
+        <div
+			className={classNames(
+				"c-homepage-layout",
+				"o-fc-aic",
+				"c-list_articles_site",
+				"t-bg-white",
+				"u-border-r-normal-black",
+				"u-border-b-heavy-black",
+				"u-border-l-light-black",
+				"u-p-l",
+          )}
+        >
+			<PostListing postEdges={postEdges} />
+			<ReadingList/>
+        </div>
       </Layout>
     );
   }

@@ -23,6 +23,7 @@ const Form = () => {
                 onChange={handleChange('name')}
                 margin="normal"
                 variant="outlined"
+                color={"grey"}
             />
         </div>
         <div className={classNames("o-fc-js", "u-width-hundred")}>

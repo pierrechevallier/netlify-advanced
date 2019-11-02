@@ -17,9 +17,6 @@
 .c-list_articles_site {
   height: 100%;
 }
-.c-list_articles_article-item {
-  width: 100%;
-}
 .c-content_site {
   min-height: 100vh;
   height: 100%;
@@ -51,6 +48,9 @@ td {
 .c-round-image {
   border-radius: 50%;
 }
+.c-small-table {
+  font-size: 0.7rem;
+}
 @media only screen and (min-width: 600px) {
   .c-title-site {
     display: block;
@@ -68,10 +68,21 @@ td {
   .c-about {
     width: 70vw;
   }
+  .c-reading-list {
+    padding-left: 1rem;
+  }
   .c-navbar-item {
     min-width: 10vw;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .c-homepage-layout {
+    display: flex;
+    flex-direction: row;
+  }
+  .c-post-list {
+    border-right: darkgray solid 1px;
+    padding-right: 1rem;
   }
 }
 @media (max-width: 600px) {
@@ -94,7 +105,18 @@ td {
   .c-about {
     width: 80vw;
   }
+  .c-reading-list {
+    padding-top: 1rem;
+  }
   .c-navbar-item {
     min-width: 30%;
+  }
+  .c-homepage-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .c-post-list {
+    border-bottom: darkgray solid 1px;
+    padding-bottom: 1rem;
   }
 }
