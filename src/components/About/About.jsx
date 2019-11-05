@@ -33,7 +33,7 @@ class About extends Component {
         </table>
         <article>
           <p>Currently I am designing a BI application in Python and React, and in my free time I design websites and do some web developpment.</p>
-          <p>If you wish to contact me for some projects that interest you, feel free to reach me on <a href={"https://www.linkedin.com/in/pierrechevallier/"} className={classNames("u-no-text-transform", "c-styled-link", "t-text-bold")}>LinkedIn</a> or on the contact form of this site.</p> 	
+          <p>If you wish, feel free to reach me on <a href={"https://www.linkedin.com/in/pierrechevallier/"} className={classNames("u-no-text-transform", "c-styled-link", "t-text-bold")}>LinkedIn</a> or on the contact form of this site.</p> 	
         </article>
       </div>
     );
