@@ -16,19 +16,20 @@ class Index extends React.Component {
         <Helmet title={config.siteTitle} />
         <SEO />
         <div
-			className={classNames(
-				"c-homepage-layout",
-				"o-fc-aic",
-				"c-list_articles_site",
-				"t-bg-white",
-				"u-border-r-normal-black",
-				"u-border-b-heavy-black",
-				"u-border-l-light-black",
-				"u-p-l",
+			  className={classNames(
+            "c-homepage-layout",
+            "o-fc-aic",
+            "c-list_articles_site",
+            "t-bg-white",
+            "u-border-r-normal-black",
+            "u-border-b-heavy-black",
+            "u-border-l-light-black",
+            "u-p-l",
+            "u-m-b-m"
           )}
         >
-			<PostListing postEdges={postEdges} />
-			<ReadingList/>
+          <PostListing postEdges={postEdges} />
+          <ReadingList/>
         </div>
       </Layout>
     );
