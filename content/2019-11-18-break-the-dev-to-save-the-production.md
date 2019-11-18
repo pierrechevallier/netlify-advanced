@@ -10,7 +10,7 @@ tags:
     - programming
     - webpack
     - debugging
-	- react
+    - react
 ---
 
 # On breaking stuff
