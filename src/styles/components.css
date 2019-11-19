@@ -51,6 +51,12 @@ td {
 .c-small-table {
   font-size: 0.7rem;
 }
+.c-content_article > p > a {
+  text-decoration: underline 2px grey;
+}
+.c-content_article > p > a:hover {
+  text-decoration: underline 4px black;
+}
 @media only screen and (min-width: 600px) {
   .c-title-site {
     display: block;

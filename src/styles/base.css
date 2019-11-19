@@ -38,6 +38,9 @@ a:visited {
   width: 1rem;
   border: black 1px solid;
 }
+code {
+  white-space: pre-wrap !important;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 2px, transparent 1%) center, #ccc;
