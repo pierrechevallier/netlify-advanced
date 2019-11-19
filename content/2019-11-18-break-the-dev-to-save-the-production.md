@@ -35,7 +35,7 @@ I looked at documentation and StackOverflow questions, GitHub bug issues and cou
 
 ## Break the dev
 
-Until came the idea of instead of **fixing the prod**, to just **break the dev**. Okay maybe it is something that many people found beforehand, but to me _this_ ****sounded like a strange revolution and I didn’t know how to do it properly.
+Until came the idea of instead of **fixing the prod**, to just **break the dev**. Okay maybe it is something that many people found beforehand, but to me _this_ sounded like a strange revolution and I didn’t know how to do it properly.
 
 In programming, debugging is a bit like a detective work, to try to find the culprit of “who killed the program”. And just as detective work, you have proofs, but sometime they aren’t like a smoking gun and you just can try catch what is wrong.
 
