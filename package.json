@@ -10,6 +10,7 @@
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",
+    "chart.js": "^2.9.3",
     "clsx": "^1.0.4",
     "core-js": "^3.2.1",
     "gatsby": "^2.15.33",
