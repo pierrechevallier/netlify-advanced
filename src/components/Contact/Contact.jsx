@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import classNames from "clsx";
 import FormComponent from "./Form";
 
+/**
+ * #Contact
+ * Contact component
+ */
 class Contact extends Component {
   render() {
     return (
