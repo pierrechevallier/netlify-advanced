@@ -41,6 +41,12 @@ a:visited {
 code {
   white-space: pre-wrap !important;
 }
+p > a {
+  text-decoration: underline 2px grey;
+}
+p > a:hover {
+  text-decoration: underline 4px black;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 2px, transparent 1%) center, #ccc;

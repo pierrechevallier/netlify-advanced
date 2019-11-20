@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classNames from "clsx";
+import { Link } from "gatsby";
 
 class About extends Component {
   render() {
@@ -7,6 +8,7 @@ class About extends Component {
       {name: "Python", type: "Programming"},
       {name: "R", type: "Programming"},
       {name: "VBA", type: "Programming"},
+      {name: "JavaScript", type: "Programming"},
       {name: "C#", type: "Programming"},
       {name: "PL/SQL", type: "Database"},
       {name: "SQL", type: "Database"},
@@ -33,7 +35,7 @@ class About extends Component {
         </table>
         <article>
           <p>Currently I am designing a BI application in Python and React, and in my free time I design websites and do some web development.</p>
-          <p>If you wish, feel free to reach me on <a href={"https://www.linkedin.com/in/pierrechevallier/"} className={classNames("u-no-text-transform", "c-styled-link", "t-text-bold")}>LinkedIn</a> or on the contact form of this site.</p> 	
+          <p>If you wish, feel free to reach me on <a href={"https://www.linkedin.com/in/pierrechevallier/"}>LinkedIn</a> or on the <Link to={"/contact"}>contact form</Link> of this site.</p> 	
         </article>
       </div>
     );
