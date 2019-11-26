@@ -39,11 +39,11 @@ export default class PostTemplate extends React.Component {
             "u-m-b-l"
             )}
         >
-          <div className={classNames("o-fc-aic","u-p-l")}>
-            <h2>{post.title}</h2>
-			<h3>Author: {post.author}</h3>
-            <div
-              className={classNames(
+          <div className={classNames("o-fc-aic","u-p-l", "u-width-hundred")}>
+		  <h2 className={classNames("u-m-l-m", "u-m-r-m", "t-text-centered")}>{post.title}</h2>
+		  <h3>Author: {post.author}</h3>
+		  <div
+			  className={classNames(
                 "o-flex-column",
                 "c-content_article")}
               dangerouslySetInnerHTML={{ __html: postNode.html }}
