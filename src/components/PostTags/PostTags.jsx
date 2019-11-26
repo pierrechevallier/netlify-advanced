@@ -12,7 +12,7 @@ class PostTags extends Component {
   render() {
     const { tags } = this.props;
     return (
-      <div className="o-fr-jc">
+      <div>
         {tags &&
           tags.map(tag => (
             <Link
@@ -30,7 +30,7 @@ class PostTags extends Component {
                     contained: classNames("u-no-shadow")
                   }
                 }
-                className={"u-border-double"}
+                className={classNames("u-m-s", "u-border-double")}
               >
                 {tag}
               </Button>
