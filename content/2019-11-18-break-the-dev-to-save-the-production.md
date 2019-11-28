@@ -12,16 +12,7 @@ tags:
     - debugging
     - react
 ---
-<!DOCTYPE html>
-<meta charset="utf-8">
 
-<style>
-body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 14px;
-  color: #333;
-}
-</style>
 
 <body>
   <div id="content">
@@ -79,7 +70,6 @@ d3.json('https://gist.githubusercontent.com/d3indepth/f28e1c3a99ea6d84986f35ac86
 
   </script>
 </body>
-</html>
 
 
 # On breaking stuff
