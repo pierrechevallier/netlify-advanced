@@ -1,16 +1,16 @@
 ---
 layout: blog
 title: Break the dev to save the production
+author: Pierre
 date: 2019-11-18T11:00:00.998Z
-cover: /images/uploads/wp1964993.jpg
-category: "programming"
-author: "Pierre"
+cover: /images/uploads/d3.png
 rating: 5
+category: programming
 tags:
-    - programming
-    - webpack
-    - debugging
-    - react
+  - programming
+  - webpack
+  - debugging
+  - react
 ---
 
 # On breaking stuff
