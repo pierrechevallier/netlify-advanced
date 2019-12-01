@@ -11,6 +11,7 @@ import classNames from "clsx";
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
+    console.log("postEdges", postEdges);
     return (
       <Layout>
         <Helmet title={config.siteTitle} />
