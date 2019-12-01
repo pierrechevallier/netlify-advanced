@@ -9,36 +9,35 @@ import classNames from "clsx";
  * _React component to display the list of tags of the post_
  */
 class PostTags extends Component {
-  render() {
-    const { tags } = this.props;
-    return (
-      <div>
-        {tags &&
-          tags.map(tag => (
-            <Link
-              className={classNames("u-m-s", "t-bg-purple")}
-              key={tag}
-              style={{ textDecoration: "none" }}
-              to={`/tags/${_.kebabCase(tag)}`}
-            >
-              <Button
-                variant="contained"
-                size="small"
-                classes={
-                  {
-                    root : classNames("t-font-inherit", "u-no-text-transform"),
-                    contained: classNames("u-no-shadow")
-                  }
-                }
-                className={classNames("u-m-s", "u-border-double")}
-              >
-                {tag}
-              </Button>
-            </Link>
-          ))}
-      </div>
-    );
-  }
+	render() {
+		const { tags } = this.props;
+		return (
+			<div className={"c-tags-list"}>
+				{tags &&
+					tags.map(tag => (
+						<Link
+							className={classNames("u-m-s", "t-bg-purple")}
+							key={tag}
+							style={{ textDecoration: "none" }}
+							to={`/tags/${_.kebabCase(tag)}`}
+						>
+							<Button
+								variant="contained"
+								size="small"
+								classes={{
+									root : classNames("t-font-inherit", "u-no-text-transform"),
+									contained: classNames("u-no-shadow")
+								}}
+								className={classNames("u-m-s", "u-border-double")}
+							>
+								{tag}
+							</Button>
+						</Link>
+					))
+				}
+			</div>
+		);
+	}
 }
 
 export default PostTags;

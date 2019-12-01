@@ -34,6 +34,11 @@
   flex-direction: row;
   justify-content: center;
 }
+.o-fc-jc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .o-fc-js {
   display: flex;
   flex-direction: column;

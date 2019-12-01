@@ -39,7 +39,12 @@ class PostListing extends React.Component {
 							{`${MONTHS[post.date.getMonth()]} ${post.date.getDate()} - ${post.author}`}
 						</span>
 					</div>
-					<span>{post.excerpt}</span>
+					<div className={classNames("u-m-b-m", "c-article-cover-excerpt")}>
+						<div className={"c-article-caption-container", "o-fc-jc"}>
+							<img src={post.cover} className={"c-article-caption"}/>
+						</div>
+						<p className={classNames("c-article-excerpt")}>{post.excerpt}</p>
+					</div>
 				</div>
 			))}
 		</div>;

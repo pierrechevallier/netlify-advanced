@@ -41,6 +41,9 @@ a:visited {
 code {
   white-space: pre-wrap !important;
 }
+p {
+  text-align: justify;
+}
 p > a {
   text-decoration: underline 2px grey;
 }
