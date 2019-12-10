@@ -16,7 +16,8 @@ class ReadingList extends Component {
       {name: "La Promesse de l'Aube", author: "Romain Gary", percentage: 100, rate: 5},
       {name: "Denier du Reve", author: "Marguerite Yourcenar", percentage: 100, rate: 3},
       {name: "The Old Man and the Sea", author: "Ernest Hemingway", percentage: 100, rate: 5},
-      {name: "Dune", author: "Frank Herbet", percentage: 94/324 * 100, rate: 0},
+      {name: "Dune", author: "Frank Herbet", percentage: 122/324 * 100, rate: 0},
+      {name: "Kim", author: "Rudyard Kipling", percentage: 14/588 * 100, rate: 0},
     ]
     return (
       <div className={classNames("c-reading-list", "o-fc-aic", "u-m-b-m")}>
