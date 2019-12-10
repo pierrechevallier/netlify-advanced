@@ -45,7 +45,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
-    const postPage = path.resolve("src/templates/post.jsx");
+	const postPage = path.resolve("src/templates/post.jsx");
+	const postChart = path.resolve("src/templates/postChart.jsx");
     const tagPage = path.resolve("src/templates/tag.jsx");
     const categoryPage = path.resolve("src/templates/category.jsx");
 
@@ -113,18 +114,36 @@ exports.createPages = async ({ graphql, actions }) => {
         const prevID = index - 1 >= 0 ? index - 1 : postsEdges.length - 1;
         const nextEdge = postsEdges[nextID];
         const prevEdge = postsEdges[prevID];
+		
+		console.log("`````````````````````````````````````````");
+		console.log("category", edge.node.frontmatter.category);
+		console.log("`````````````````````````````````````````");
 
-        createPage({
-            path: edge.node.fields.slug,
-            component: postPage,
-            context: {
-                slug: edge.node.fields.slug,
-                nexttitle: nextEdge.node.frontmatter.title,
-                nextslug: nextEdge.node.fields.slug,
-                prevtitle: prevEdge.node.frontmatter.title,
-                prevslug: prevEdge.node.fields.slug
-            }
-        });
+		if (edge.node.frontmatter.category === "chart") {
+			createPage({
+				path: edge.node.fields.slug,
+				component: postChart,
+				context: {
+					slug: edge.node.fields.slug,
+					nexttitle: nextEdge.node.frontmatter.title,
+					nextslug: nextEdge.node.fields.slug,
+					prevtitle: prevEdge.node.frontmatter.title,
+					prevslug: prevEdge.node.fields.slug
+				}
+			});
+		} else {
+			createPage({
+				path: edge.node.fields.slug,
+				component: postPage,
+				context: {
+					slug: edge.node.fields.slug,
+					nexttitle: nextEdge.node.frontmatter.title,
+					nextslug: nextEdge.node.fields.slug,
+					prevtitle: prevEdge.node.frontmatter.title,
+					prevslug: prevEdge.node.fields.slug
+				}
+			});
+		}
     });
 
     tagSet.forEach(tag => {

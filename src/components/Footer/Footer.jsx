@@ -1,37 +1,26 @@
 import React, { Component } from "react";
-import { Link } from "gatsby";
-import UserLinks from "../UserLinks/UserLinks";
-import "./Footer.css";
+import config from "../../../data/SiteConfig";
+import classNames from "clsx";
 
 class Footer extends Component {
-  render() {
-    const { config } = this.props;
-    const url = config.siteRss;
-    const { copyright } = config;
-    if (!copyright) {
-      return null;
-    }
-    return (
-      <footer className="footer">
-        <UserLinks config={config} labeled />
-        <div className="notice-container">
-          <h4>{copyright}</h4>
-
-          <Link to={url}>
-            <button>Subscribe</button>
-          </Link>
-          <h4>
-            Based on
-{" "}
-            <a href="https://github.com/Vagr9K/gatsby-advanced-starter">
-              Gatsby Advanced Starter
-            </a>
-            .
-          </h4>
-        </div>
-      </footer>
-    );
-  }
+	render() {
+		const { copyright } = config;
+		if (!copyright) {
+			return null;
+		}
+		return <footer className={classNames("o-fr-jsb", "u-p-m", "u-border-t-double", "o-aic")}>
+			<span>{copyright}</span>
+			<div className={classNames("o-fr-aic")}>
+				<span>{"Check my GitHub repo "}</span>
+				<a href={"https://github.com/pierrechevallier/"}>
+					<img className={classNames("c-3rd-party-logo-height", "u-m-l-m")}
+						src={"/images/github.png"}
+						alt={"git logo"}
+					/>
+				</a>
+			</div>
+		</footer>;
+	}
 }
 
 export default Footer;

@@ -88,6 +88,9 @@ td {
   display: grid;
   grid-template-columns: auto auto;
 }
+.c-3rd-party-logo-height {
+  height: 2rem;
+}
 @media only screen and (min-width: 1000px) {
   .c-homepage-layout {
     display: flex;

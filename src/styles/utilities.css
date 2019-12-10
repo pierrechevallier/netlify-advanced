@@ -13,6 +13,9 @@
 .u-border-double {
   border: darkgrey 0.2rem double !important;
 }
+.u-border-t-double {
+  border-top: black 0.2rem double;
+}
 .u-border-b-double {
   border-bottom: black 0.2rem double;
 }
