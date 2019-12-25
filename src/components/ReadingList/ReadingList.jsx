@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classNames from "clsx";
 import CheckOutlined from "@material-ui/icons/CheckOutlined";
+import Star from "@material-ui/icons/Star";
 
 /**
  * #ReadingList
@@ -35,8 +36,8 @@ class ReadingList extends Component {
 				<tr key={book.name}>
 					<td>{book.name}</td>
 					<td>{book.author}</td>
-                    <td>{book.percentage === 100 ? <CheckOutlined/> : `${Math.round(book.percentage * 10) / 10}%`}</td>
-                    <td>{book.percentage === 100 ? book.rate : ""}</td>
+          <td>{book.percentage === 100 ? <CheckOutlined/> : `${Math.round(book.percentage * 10) / 10}%`}</td>
+          <td>{book.percentage === 100 ? book.rate : ""}</td>
 				</tr>
 			))}
         </table>
