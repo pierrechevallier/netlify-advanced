@@ -55,7 +55,10 @@ module.exports = {
                         resolve: "gatsby-remark-responsive-iframe"
                     },
                     "gatsby-remark-copy-linked-files",
-                    "gatsby-remark-autolink-headers",
+                    {
+                        resolve: "gatsby-remark-autolink-headers",
+                        options: {offsetY: `68`}
+                    },
                     "gatsby-remark-prismjs"
                 ]
             }
