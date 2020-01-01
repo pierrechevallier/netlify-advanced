@@ -36,7 +36,7 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2019. Pierre Chevallier", // Copyright string for the footer of the website and RSS feed.
+  copyright: `Copyright © ${new Date().getFullYear()}. Pierre Chevallier`, // Copyright string for the footer of the website and RSS feed.
   themeColor: "#F07369", // Used for setting manifest and progress theme colors.
   backgroundColor: "#F2F4EE" // Used for setting manifest background color.
 };
