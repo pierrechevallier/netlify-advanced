@@ -9,7 +9,7 @@ import { Link } from "gatsby";
  * @param title: string, title of the website
  */
 const Navbar = ({title}) => (
-    <div className={classNames("c-navbar", "u-border-b-double", "t-bg-white", "o-fr-jc", "o-fr-aic")}>
+    <div className={classNames("c-navbar", "u-border-b-double", "t-bg-white", "o-fr-jc", "o-fr-aic", "u-z-1")}>
         <Link to={"/"} className={classNames("u-no-txt-deco", "u-no-text-transform", "u-m-r-l")}>
             <img className={"c-title-site"} src={"/logos/title.png"} alt={title}/>
             <img className={"c-title-site-mobile"} src={"/logos/logo.png"} alt={title}/>

@@ -57,7 +57,7 @@ module.exports = {
                     "gatsby-remark-copy-linked-files",
                     {
                         resolve: "gatsby-remark-autolink-headers",
-                        options: {offsetY: `68`}
+                        options: {offsetY: `70`}
                     },
                     "gatsby-remark-prismjs"
                 ]
