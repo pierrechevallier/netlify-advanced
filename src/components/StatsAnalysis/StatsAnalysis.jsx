@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/NativeSelect';
 import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
+import statistics_analysis from "../../../data/StatisticsAnalysis";
 
 /**
  * #StatsAnalysis
@@ -50,6 +50,12 @@ const StatsAnalysis = () => {
                 </Select>
             </FormControl>
         </div>
+        <table className={classNames("c-table-info", "c-small-table")}>
+			<tr className={"c-table-head"}>
+				<th>Descriptive</th>
+				<th>Inferential</th>
+			</tr>
+        </table>
     </div>
 };
 
