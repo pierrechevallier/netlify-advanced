@@ -9,7 +9,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 /**
  * #StatsAnalysis
- * A component for displaying a summary of statistics depending on their type
+ * A functional component for displaying a summary of statistics depending on their type
  */
 const StatsAnalysis = () => {
     const [responseData, setResponseData] = React.useState("quant");
@@ -23,6 +23,7 @@ const StatsAnalysis = () => {
         <FormControl className={classNames("o-col-6")}>
             <InputLabel id="select-type-data-response">Response variable</InputLabel>
             <Select
+                native
                 labelId="select-type-data-response-label"
                 id="select-type-data-response"
                 value={responseData}
@@ -36,6 +37,7 @@ const StatsAnalysis = () => {
         <FormControl className={classNames("o-col-6")}>
             <InputLabel id="select-type-data-explanatory">Explanatory variable</InputLabel>
             <Select
+                native
                 labelId="select-type-data-explanatory-label"
                 id="select-type-data-explanatory"
                 value={explanatoryData}
