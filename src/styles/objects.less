@@ -20,6 +20,9 @@
 .o-aic {
     align-items: center;
 }
+.o-jcsa {
+    justify-content: space-around
+}
 .o-fr-aic {
     .o-flex-row();
     .o-aic();
@@ -57,9 +60,15 @@
 .o-col-10 {width: 83.33%;}
 .o-col-11 {width: 91.66%;}
 .o-col-12 {width: 100%;}
-
+.o-resp-row-col {
+    display: flex;
+    flex-direction: row;
+}
 @media (max-width: 680px) {
     [class*="o-col-"] {
       width: 100%;
+    }
+    .o-resp-row-col {
+        flex-direction: column;
     }
 }

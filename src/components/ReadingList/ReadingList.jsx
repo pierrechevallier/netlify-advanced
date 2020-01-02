@@ -31,10 +31,10 @@ const ReadingList = () => {
 				</tr>
 			))}
         </table>
-		<div className={classNames("o-fr-jsb")}>
+		<div className={classNames("o-fr-jsb", "o-aic")}>
 			{yearSelected > 2019 && <NavigateBefore onClick={() => setYear(yearSelected - 1)}/>}
 			<span>{yearSelected}</span>
-			{yearSelected < 2020 && <NavigateNext onClick={() => setYear(yearSelected + 1)}/>}
+			{yearSelected < new Date().getFullYear() && <NavigateNext onClick={() => setYear(yearSelected + 1)}/>}
 		</div>
 	</div>
 };
