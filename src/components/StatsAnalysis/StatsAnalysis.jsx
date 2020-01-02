@@ -20,7 +20,7 @@ const StatsAnalysis = () => {
         "non-binary": "Qualitative (non-binary data)"
     };
     return <div className={classNames("c-about", "o-flex-column", "u-m-b-m", "u-z-0", "u-m-t-m")}>
-        <FormControl>
+        <FormControl className={classNames("o-col-6")}>
             <InputLabel id="select-type-data-response">Response variable</InputLabel>
             <Select
                 labelId="select-type-data-response-label"
@@ -33,7 +33,7 @@ const StatsAnalysis = () => {
                 ))}
             </Select>
         </FormControl>
-        <FormControl>
+        <FormControl className={classNames("o-col-6")}>
             <InputLabel id="select-type-data-explanatory">Explanatory variable</InputLabel>
             <Select
                 labelId="select-type-data-explanatory-label"
