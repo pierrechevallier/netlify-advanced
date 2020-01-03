@@ -22,6 +22,9 @@
 .o-aic {
   align-items: center;
 }
+.o-jc {
+  justify-content: center;
+}
 .o-jcsa {
   justify-content: space-around;
 }

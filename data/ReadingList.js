@@ -1,6 +1,6 @@
 const reading_list = {
     2020: [
-        {name: "Dune", author: "Frank Herbet", percentage: 214/794 * 100, rate: 0},
+        {name: "Dune", author: "Frank Herbet", percentage: 314/794 * 100, rate: 0},
         {name: "Kim", author: "Rudyard Kipling", percentage: 14/588 * 100, rate: 0},
     ],
     2019: [

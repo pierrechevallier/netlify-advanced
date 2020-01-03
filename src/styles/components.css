@@ -17,6 +17,9 @@
 .c-list_articles_site {
   height: 100%;
 }
+.c-list_articles_article-item {
+  width: 100%;
+}
 .c-content_site {
   min-height: 100vh;
   height: 100%;

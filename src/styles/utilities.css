@@ -98,6 +98,9 @@ PADDINGS
 .u-p-m {
   padding: 1rem;
 }
+.u-p-s {
+  padding: 0.5rem;
+}
 .u-p-b-m {
   padding-bottom: 1rem;
 }
