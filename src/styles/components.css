@@ -38,6 +38,9 @@
   vertical-align: bottom;
   text-transform: uppercase;
 }
+.c-table-border-right {
+  border-right: black 1px dotted;
+}
 .c-table-info,
 td {
   border-bottom: 1px solid #cdcdcd;

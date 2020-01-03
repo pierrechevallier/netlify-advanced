@@ -19,6 +19,7 @@ const StatsAnalysis = () => {
         binary: "Qualitative (binary data)",
         "non-binary": "Qualitative (non-binary data)"
     };
+    const selection = statistics_analysis[`${responseData}-${explanatoryData}`];
     return <div className={classNames("c-about", "o-flex-column", "u-m-b-m", "u-z-0", "u-m-t-m")}>
         <div className={classNames("o-resp-row-col", "o-jcsa")}>
             <FormControl className={classNames("o-col-5")}>
@@ -50,12 +51,39 @@ const StatsAnalysis = () => {
                 </Select>
             </FormControl>
         </div>
-        <table className={classNames("c-table-info", "c-small-table")}>
-			<tr className={"c-table-head"}>
-				<th>Descriptive</th>
-				<th>Inferential</th>
-			</tr>
-        </table>
+        <div className={classNames("o-fr-jc", "u-m-m")}>
+            <table className={classNames("c-table-info", "c-small-table", "u-m-s")}>
+                <tr className={"c-table-head"}>
+                    <th>Analysis method</th>
+                    <th>Visualisation</th>
+                    <th>Hypothesis testing</th>
+                    <th>Example of modelisation</th>
+                </tr>
+                <tr>
+                    <td>
+                        {Object.keys(selection.descriptive.method).map(key => (
+                            <p>
+                                <h4 className={"t-text-capitalize"}>{`${key}:`}</h4>
+                                <span>
+                                    {selection.descriptive.method[key].map(item => (
+                                        item
+                                    ))}
+                                </span>
+                            </p>
+                        ))}
+                    </td>
+                    <td className={"c-table-border-right"}>
+                        {selection.descriptive.visualisation.content.map(content => content).toString().replace(",", ", ")}
+                    </td>
+                    <td>
+                        {selection.inferential.hypothesis.content.map(content => content).toString().replace(",", ", ")}
+                    </td>
+                    <td>
+                        {selection.inferential.modelisation.content.map(content => content).toString().replace(",", ", ")}
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 };
 
