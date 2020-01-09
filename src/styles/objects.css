@@ -56,7 +56,7 @@
 .o-fc-js {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .o-col-1 {
   width: 8.33%;

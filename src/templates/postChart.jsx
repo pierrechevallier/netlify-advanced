@@ -13,7 +13,7 @@ import { HttpLink } from 'apollo-link-http';
 import gql from 'graphql-tag';
 
 // D3 imports
-//import d3 from "d3";
+// import d3 from "d3";
 
 /**
  * #PostTemplate
@@ -31,16 +31,25 @@ export default class PostTemplate extends React.Component {
 		if (!post.category_id) {
 			post.category_id = config.postDefaultCategoryID;
 		}
-		const uri = 'http://api.githunt.com/graphql';
-		const link = new HttpLink({ uri });
-
-		const operation = {
-			query: gql`query { hello }`
-		};
+		const uri = 'https://api.github.com/graphql';
+		const link = new HttpLink({
+			uri,
+			headers: {authorization: "token 32ac6fc6321a30a655e7a08ee4d54509d680221e"},
+		});
+		const query = `{
+			viewer {
+			  gist(name: "d8c63abd2e84c0e320e13052e7869fcf") {
+				files {
+				  text
+				}
+			  }
+			}
+		  }`
+		const operation = {query: gql`query ${query}`};
 		// For single execution operations, a Promise can be used
 		makePromise(execute(link, operation))
 			.then(data => console.log(`received data ${JSON.stringify(data, null, 2)}`))
-			.catch(error => console.log(`received error ${error}`))
+			.catch(error => console.log(`received error ${error}`))	
 		return (
 			<Layout>
 				<Helmet>
@@ -62,6 +71,9 @@ export default class PostTemplate extends React.Component {
 						<h2 className={classNames("u-m-l-m", "u-m-r-m", "t-text-centered")}>{post.title}</h2>
 						<h3>Author: {post.author}</h3>
 						<h2>This component will contain a chart</h2>
+						<svg width="700" height="110">
+							<path></path>
+						</svg>
 						<div className={classNames("o-fc-jc")}>
 							<img src={post.cover} className={"c-article-cover"}/>
 						</div>

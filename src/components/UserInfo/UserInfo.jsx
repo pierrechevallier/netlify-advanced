@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 import { Follow } from "react-twitter-widgets";
 
-class UserInfo extends Component {
-  render() {
-    const { userTwitter } = this.props.config;
-    const { expanded } = this.props;
-    return (
-      <Follow
-        username={userTwitter}
-        options={{ count: expanded ? true : "none" }}
-      />
-    );
-  }
-}
+/**
+ * #UserInfo
+ * Functionnal component to display the informations about the user
+ */
+const UserInfo = (props) => {
+	const { userTwitter } = props.config;
+	const { expanded } = props;
+	return <Follow username={userTwitter} options={{ count: expanded ? true : "none" }}/>
+};
 
 export default UserInfo;
