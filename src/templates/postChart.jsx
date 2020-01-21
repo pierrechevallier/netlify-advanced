@@ -7,13 +7,9 @@ import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import flightData from "../../content/plane_delay.json";
 import classNames from "clsx";
-import { execute, makePromise } from 'apollo-link';
-import { HttpLink } from 'apollo-link-http';
-import gql from 'graphql-tag';
-
-// D3 imports
-// import d3 from "d3";
+import BarChart from "../components/NivoComponents/BarChart";
 
 /**
  * #PostTemplate
@@ -31,25 +27,7 @@ export default class PostTemplate extends React.Component {
 		if (!post.category_id) {
 			post.category_id = config.postDefaultCategoryID;
 		}
-		const uri = 'https://api.github.com/graphql';
-		const link = new HttpLink({
-			uri,
-			headers: {authorization: "token 32ac6fc6321a30a655e7a08ee4d54509d680221e"},
-		});
-		const query = `{
-			viewer {
-			  gist(name: "d8c63abd2e84c0e320e13052e7869fcf") {
-				files {
-				  text
-				}
-			  }
-			}
-		  }`
-		const operation = {query: gql`query ${query}`};
-		// For single execution operations, a Promise can be used
-		makePromise(execute(link, operation))
-			.then(data => console.log(`received data ${JSON.stringify(data, null, 2)}`))
-			.catch(error => console.log(`received error ${error}`))	
+		console.log("Flight data", flightData)
 		return (
 			<Layout>
 				<Helmet>
@@ -70,10 +48,10 @@ export default class PostTemplate extends React.Component {
 					<div className={classNames("o-fc-aic","u-p-l", "u-width-hundred")}>
 						<h2 className={classNames("u-m-l-m", "u-m-r-m", "t-text-centered")}>{post.title}</h2>
 						<h3>Author: {post.author}</h3>
-						<h2>This component will contain a chart</h2>
-						<svg width="700" height="110">
-							<path></path>
-						</svg>
+						<h2>The chart is here:</h2>
+						<div className={"c-test-nivo"}>
+							<BarChart data={flightData}/>
+						</div>
 						<div className={classNames("o-fc-jc")}>
 							<img src={post.cover} className={"c-article-cover"}/>
 						</div>

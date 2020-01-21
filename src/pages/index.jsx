@@ -25,7 +25,9 @@ class Index extends React.Component {
             "u-border-r-normal-black",
             "u-border-b-heavy-black",
             "u-border-l-light-black",
-            "u-p-l",
+            "u-p-b-l",
+            "u-p-r-l",
+            "u-p-l-l",
             "u-m-b-m"
           )}
         >

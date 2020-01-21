@@ -30,7 +30,7 @@ class PostListing extends React.Component {
 		const postList = this.getPostList();
 		return <div className={classNames("c-post-list", "u-height-hundred")}>
 			{postList.map(post => (
-				<div className={classNames("c-list_articles_article-item", "u-border-light-grey", "o-flex-column", "u-p-m", "u-m-t-m", "u-m-b-m")}>
+				<div className={classNames("c-list_articles_article-item", "u-border-light-grey", "o-flex-column", "u-m-t-m", "u-m-b-m")}>
 					<Link to={post.path} key={post.title} className={classNames("u-no-text-transform", "c-styled-link")}>
 						<h2 className={classNames("o-fr-aic")}><NavigateNext/>{post.title}</h2>
 					</Link>
