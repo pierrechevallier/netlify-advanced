@@ -196,6 +196,10 @@ td {
   .c-content_article {
     max-width: 90vw;
   }
+  .c-test-nivo {
+    height: 50vh;
+    width: 85vw;
+  }
   .c-about {
     width: 80vw;
   }
