@@ -25,6 +25,11 @@ const StatsAnalysis = () => {
         binary: "Qualitative (binary data)",
         "non-binary": "Qualitative (non-binary data)"
     };
+    const type_color = {
+        quant: "t-red",
+        binary: "t-green",
+        "non-binary": "t-blue"
+    };
     const selection = statistics_analysis[`${responseData}-${explanatoryData}`];
     return <div className={classNames("c-about", "o-flex-column", "u-m-b-m", "u-z-0", "u-m-t-m")}>
         <div className={classNames("o-resp-row-col", "o-jcsa", "u-p-s")}>
@@ -36,6 +41,7 @@ const StatsAnalysis = () => {
                     id="select-type-data-response"
                     value={responseData}
                     onChange={(e) => setResponseData(e.target.value)}
+                    className={classNames(type_color[responseData])}
                 >
                     {Object.keys(type_data).map(key => (
                         <option value={key}>{type_data[key]}</option>
@@ -50,6 +56,7 @@ const StatsAnalysis = () => {
                     id="select-type-data-explanatory"
                     value={explanatoryData}
                     onChange={(e) => setExplanatoryData(e.target.value)}
+                    className={classNames(type_color[explanatoryData])}
                 >
                     {Object.keys(type_data).map(key => (
                         <option value={key}>{type_data[key]}</option>
@@ -122,8 +129,8 @@ const StatsAnalysis = () => {
                     console.log("object keys data", res_data, exp_data);
                     const data = statistics_analysis[`${res_data}-${exp_data}`];
                     return <tr key={`${res_data}-${exp_data}`}>
-                        <td>{type_data[res_data]}</td>
-                        <td className={"c-table-border-right"}>{type_data[exp_data]}</td>
+                        <td className={classNames(type_color[res_data])}>{type_data[res_data]}</td>
+                        <td className={classNames(type_color[exp_data], "c-table-border-right")}>{type_data[exp_data]}</td>
                         <td className={"c-table-border-right"}>
                             {Object.keys(data.descriptive.method).map(key => {
                                 const items = data.descriptive.method[key];
