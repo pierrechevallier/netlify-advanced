@@ -1,7 +1,9 @@
 const reading_list = {
     2020: [
-        {name: "Dune", author: "Frank Herbet", percentage: 314/794 * 100, rate: 0},
-        {name: "Kim", author: "Rudyard Kipling", percentage: 14/588 * 100, rate: 0},
+        {name: "Dune", author: "Frank Herbet", percentage: 100, rate: 5},
+        {name: "Kim", author: "Rudyard Kipling", percentage: 15/588 * 100, rate: 0},
+        {name: "Dune Messiah", author: "Frank Herbet", percentage: 127/376*100, rate: 0},
+        {name: "A Moveable Feast", author: "Ernest Hemingway", percentage: 100/300*100, rate: 0},
     ],
     2019: [
         {name: "The tree body Problem", author: "Liu Cixin", percentage: 100, rate: 5},
