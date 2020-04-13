@@ -2,6 +2,7 @@ const reading_list = {
     2020: [
         {name: "Dune", author: "Frank Herbet", percentage: 100, rate: 5},
         {name: "Kim", author: "Rudyard Kipling", percentage: 15/588 * 100, rate: 0},
+        {name: "Shibumi", author: "Trevanian", percentage: 100, rate: 5},
         {name: "Dune Messiah", author: "Frank Herbet", percentage: 127/376*100, rate: 0},
         {name: "A Moveable Feast", author: "Ernest Hemingway", percentage: 100/300*100, rate: 0},
     ],

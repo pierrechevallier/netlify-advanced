@@ -1,10 +1,15 @@
 import React from "react";
 import classNames from "clsx";
 import { Link } from "gatsby";
+
 // MUI
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/NativeSelect';
 import InputLabel from '@material-ui/core/InputLabel';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+
+// Data
 import statistics_analysis from "../../../data/StatisticsAnalysis";
 
 /**
@@ -14,6 +19,7 @@ import statistics_analysis from "../../../data/StatisticsAnalysis";
 const StatsAnalysis = () => {
     const [responseData, setResponseData] = React.useState("quant");
     const [explanatoryData, setExplanatoryData] = React.useState("quant");
+    const [showFullTable, setShow] = React.useState(false);
     const type_data = {
         quant: "Quantitative",
         binary: "Qualitative (binary data)",
@@ -50,8 +56,19 @@ const StatsAnalysis = () => {
                     ))}
                 </Select>
             </FormControl>
+            <FormControlLabel
+                control={
+                    <Checkbox
+                        checked={showFullTable}
+                        onChange={() => setShow(!showFullTable)}
+                        name="checkedShowTable"
+                        color="default"
+                    />
+                }
+                label="Show all the table"
+            />
         </div>
-        <div className={classNames("o-resp-row-col", "o-jc", "u-m-m")}>
+        <div className={classNames("o-resp-row-col", "o-jc", "u-m-m", showFullTable ? "t-hidden" : "")}>
             <table className={classNames("c-table-info", "c-small-table", "u-m-s")}>
                 <tr className={"c-table-head"}>
                     <th>Analysis method</th>
@@ -91,6 +108,48 @@ const StatsAnalysis = () => {
                 </tr>
             </table>
         </div>
+        <table className={classNames("c-table-info", "c-small-table", "u-m-s", showFullTable ? "" : "t-hidden")}>
+            <tr className={"c-table-head"}>
+                <th>Response variable</th>
+                <th>Explanatory variable</th>
+                <th>Analysis method</th>
+                <th>Visualisation</th>
+                <th>Hypothesis testing</th>
+                <th>Example of modelisation</th>
+            </tr>
+            {Object.keys(type_data).map(res_data => {
+                return Object.keys(type_data).map(exp_data => {
+                    console.log("object keys data", res_data, exp_data);
+                    const data = statistics_analysis[`${res_data}-${exp_data}`];
+                    return <tr key={`${res_data}-${exp_data}`}>
+                        <td>{type_data[res_data]}</td>
+                        <td className={"c-table-border-right"}>{type_data[exp_data]}</td>
+                        <td className={"c-table-border-right"}>
+                            {Object.keys(data.descriptive.method).map(key => {
+                                const items = data.descriptive.method[key];
+                                if (items.length > 0) {
+                                    return <p>
+                                        <h4 className={"t-text-capitalize"}>{`${key}:`}</h4>
+                                        <span>{items.map(item => item)}</span>
+                                    </p>
+                                } else {
+                                    return null
+                                }
+                            })}
+                        </td>
+                        <td className={"c-table-border-right"}>
+                            {data.descriptive.visualisation.content.map(content => content).toString().replace(",", ", ")}
+                        </td>
+                        <td className={"c-table-border-right"}>
+                            {data.inferential.hypothesis.content.map(content => content).toString().replace(",", ", ")}
+                        </td>
+                        <td>
+                            {data.inferential.modelisation.content.map(content => content).toString().replace(",", ", ")}
+                        </td>
+                    </tr>
+                })
+            })}
+        </table>
     </div>
 };
 

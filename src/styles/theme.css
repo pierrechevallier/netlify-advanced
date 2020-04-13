@@ -1,3 +1,6 @@
+.t-hidden {
+  display: none;
+}
 .t-bg-white {
   background-color: white;
 }
