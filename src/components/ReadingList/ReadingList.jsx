@@ -1,10 +1,14 @@
 import React from "react";
 import classNames from "clsx";
+
+//Icon
 import CheckOutlined from "@material-ui/icons/CheckOutlined";
-import Star from "@material-ui/icons/Star";
 import NavigateNext from "@material-ui/icons/NavigateNext";
 import NavigateBefore from "@material-ui/icons/NavigateBefore";
+
+// Architecture
 import readingList from "../../../data/ReadingList";
+import Table from "../../containers/tables/Table";
 
 /**
  * #ReadingList

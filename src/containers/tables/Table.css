@@ -1,0 +1,36 @@
+/*General table rules*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+td {
+    border-bottom: 1px solid #cdcdcd;
+    vertical-align: middle;
+    line-height: 1.35em;
+    padding: .25em .5em;
+    height: 100%;
+}
+/*Specific table rules*/
+.small-table {
+    font-size: 0.7rem;
+}
+.styled-table-head {
+    border-bottom: 2px solid #000;
+    font-size: .8rem;
+    font-weight: 700;
+    vertical-align: bottom;
+    text-transform: uppercase;
+}
+.styled-table-data, td {
+    border-bottom: 1px solid #cdcdcd;
+    vertical-align: middle;
+    line-height: 1.35em;
+    padding: .25em 1em;
+}
