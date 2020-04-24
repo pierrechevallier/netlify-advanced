@@ -15,7 +15,6 @@ import SEO from "../components/SEO/SEO";
 
 // Style
 import classNames from "clsx";
-import BarChart from "../components/NivoComponents/BarChart";
 
 /**
  * #PostTemplate

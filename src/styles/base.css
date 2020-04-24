@@ -87,6 +87,8 @@ article table {
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 0.7rem;
+  margin: 1rem auto 1rem auto;
+  text-align: center;
 }
 article th {
   font-style: normal;
@@ -103,9 +105,9 @@ article td {
   border-bottom: 1px solid #cdcdcd;
   vertical-align: middle;
   line-height: 1.35em;
-  padding: 0.25em 0.5em;
+  padding: 0.25em 1em;
   height: 100%;
 }
 article tbody > tr:hover {
-  background-color: rgba(155, 155, 155, 0.2);
+  background-color: rgba(155, 155, 155, 0.3);
 }

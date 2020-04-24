@@ -19,7 +19,7 @@ import statistics_analysis from "../../../data/StatisticsAnalysis";
 const StatsAnalysis = () => {
     const [responseData, setResponseData] = React.useState("quant");
     const [explanatoryData, setExplanatoryData] = React.useState("quant");
-    const [showFullTable, setShow] = React.useState(false);
+    const [showFullTable, setShow] = React.useState(true);
     const type_data = {
         quant: "Quantitative",
         binary: "Qualitative (binary data)",
