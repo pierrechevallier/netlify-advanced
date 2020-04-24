@@ -82,3 +82,30 @@ td {
   padding: 0.25em 0.5em;
   height: 100%;
 }
+/* Articles table*/
+article table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.7rem;
+}
+article th {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom: 2px solid #000;
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
+article td {
+  border-bottom: 1px solid #cdcdcd;
+  vertical-align: middle;
+  line-height: 1.35em;
+  padding: 0.25em 0.5em;
+  height: 100%;
+}
+article tbody > tr:hover {
+  background-color: rgba(155, 155, 155, 0.2);
+}

@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // Styles
-import clsx from "clsx";
 import "./Table.css";
 
 /**
@@ -16,21 +15,31 @@ import "./Table.css";
  * @param columns {Array} - columns of the table
  * @param data {Array} - data of the table, with the columns as key
  */
-const Table = ({columns, data}) => {
+const Table = ({
+    columns=["fruit", "colour"],
+    data=[
+        {fruit: "Apple", colour: "Green"},
+        {fruit: "Cherry", colour: "red"}
+    ]
+}) => {
     return (
-        <table className={clsx("styled-table-data", "small-table")}>
-            <tr className={"styled-table-head"}>
-                {columns.map((column, index) => {
-                    return <th key={`column-${index}`}>{column}</th>
-                })}
-            </tr>
-            {data.map((row, index) => (
-                <tr key={`row-${index}`}>
+        <table>
+            <thead>
+                <tr>
                     {columns.map((column, index) => {
-                        return <td key={`row-column-${index}`}>{row[column]}</td>
+                        return <th key={`column-${index}`}>{column}</th>
                     })}
                 </tr>
-            ))}
+            </thead>
+            <tbody>
+                {data.map((row, index) => (
+                    <tr key={`row-${index}`}>
+                        {columns.map((column, index) => {
+                            return <td key={`row-column-${index}`}>{row[column]}</td>
+                        })}
+                    </tr>
+                ))}
+            </tbody>
         </table>
     )
 }

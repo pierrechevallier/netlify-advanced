@@ -1,13 +1,19 @@
 import React from "react";
 import Helmet from "react-helmet";
+
+// Data
 import { graphql } from "gatsby";
+import config from "../../data/SiteConfig";
+import flightData from "../../content/plane_delay.json";
+
+// Architecture
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo/UserInfo";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
-import flightData from "../../content/plane_delay.json";
+
+// Style
 import classNames from "clsx";
 import BarChart from "../components/NivoComponents/BarChart";
 
@@ -45,13 +51,11 @@ export default class PostTemplate extends React.Component {
 						"u-m-b-l"
 					)}
 				>
-					<div className={classNames("o-fc-aic","u-p-l", "u-width-hundred")}>
+					<article className={classNames("o-fc-aic","u-p-l", "u-width-hundred")}>
 						<h2 className={classNames("u-m-l-m", "u-m-r-m", "t-text-centered")}>{post.title}</h2>
 						<h3>Author: {post.author}</h3>
 						<h2>The chart is here:</h2>
-						<div className={"c-test-nivo"}>
-							<BarChart data={flightData}/>
-						</div>
+						{/*<div className={"c-test-nivo"}><BarChart data={flightData}/></div>*/}
 						<div className={classNames("o-fc-jc")}>
 							<img src={post.cover} className={"c-article-cover"}/>
 						</div>
@@ -64,7 +68,7 @@ export default class PostTemplate extends React.Component {
 							<SocialLinks postPath={slug} postNode={postNode} />
 						</div>
 						<UserInfo config={config} />
-					</div>
+					</article>
 				</div>
 			</Layout>
 		);

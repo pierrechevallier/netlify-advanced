@@ -35,6 +35,7 @@ const ReadingList = () => {
 				</tr>
 			))}
         </table>
+		{/*<Table columns={Object.keys(books[0])} data={books}/>*/}
 		<div className={classNames("o-fr-jsb", "o-aic")}>
 			{yearSelected > 2019 && <NavigateBefore onClick={() => setYear(yearSelected - 1)}/>}
 			<span>{yearSelected}</span>

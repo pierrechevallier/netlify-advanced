@@ -13,3 +13,10 @@ tags:
   - react
 ---
 Chart ?
+
+| Fruit   | colour | number |
+| ------- | ------ | ------ |
+| Apple   | Green  | 1      |
+| Cherry  | Red    | 1      |
+| Apricot | Orange | 10     |
+
