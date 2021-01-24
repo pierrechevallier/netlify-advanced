@@ -7,7 +7,6 @@ const config = {
   pathPrefix: "/netlify-advanced", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A personal website for blogging and keeping a portfolio.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
-  googleAnalyticsID: "UA-150199880-1", // GA tracking ID.
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
@@ -36,7 +35,7 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: `Copyright © 2019. Pierre Chevallier`, // Copyright string for the footer of the website and RSS feed. ${new Date().getFullYear()}
+  copyright: `Copyright © ${new Date().getFullYear()}. Pierre Chevallier`, // Copyright string for the footer of the website and RSS feed. ${new Date().getFullYear()}
   themeColor: "#F07369", // Used for setting manifest and progress theme colors.
   backgroundColor: "#F2F4EE" // Used for setting manifest background color.
 };

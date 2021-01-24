@@ -18,7 +18,7 @@ class About extends Component {
         <h3 className="t-text-centered">
           Hello! I'm Pierre Chevallier
         </h3>
-		    <span className={classNames("t-text-centered", "u-m-b-m")}>I'm a data analyst and web developer.</span>
+		    <span className={classNames("t-text-centered", "u-m-b-m")}>I'm a data scientist and web developer.</span>
 		    <img src={"/images/picture-pierre.jpg"} alt={"Picture of Pierre Chevallier"} className={"c-round-image"}/>
         <h2 className="t-text-centered">I have experience with the following technologies</h2>
         <table className={"c-table-info"}>
@@ -34,7 +34,9 @@ class About extends Component {
           ))}
         </table>
         <article>
-          <p>Currently I am designing a BI application in Python and React, and in my free time I design websites and do some web development.</p>
+          <p>I am currently working as a Senior Data Scientist and build new tools within an awesome team.</p>
+          <p>One thing that I enjoy and I hope you too, is documenting things and making sure everyone can use them afterwards.</p>
+          <p>Over the past few years I designed a BI application in Python and React from scratch. In my free time I design websites and do some web development, as well as some data analysis.</p>
           <p>If you wish, feel free to reach me on <a href={"https://www.linkedin.com/in/pierrechevallier/"}>LinkedIn</a> or on the <Link to={"/contact"}>contact form</Link> of this site.</p> 	
         </article>
       </div>
